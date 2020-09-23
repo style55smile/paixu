@@ -13,7 +13,7 @@ void charu(int *a,int len) {
 		for (int j = i-1; j >= 0; j--)
 		{
 			//如果新加入的数字小于，数组中的数字，交换新数字与数组中数字的位置
-			if (a[pivot] < a[j]) {
+			if (a[pivot] < a[j]) {		//把 < 改为 > 把 升序排序 变成 降序排序
 				m_swap(&a[pivot], &a[j]);
 				//更新基准点的坐标
 				pivot = j;
